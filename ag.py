@@ -14,9 +14,6 @@ botStart = time.time()
 
 #line = LINE('EMAIL', 'PASSWORD')
 line = LINE("EASYdNwP0qH3RfNMvR63.GAVezd3PruI9iRQtopoZ8W.2dMHyzzdt61FEQtGzDdxgBJs1+4gSG1baW9cXlph31k=")
-#line = LINE("EAQ1MsH53scnxwLC1usa.sbQrgLdC18mpS5b8J74XUG.H4dc/NanzkhFyRlbzS147J8ht8yhZazQEHcLOY+1WmQ=")
-#line = LINE("EAriIG9gtodwwVUwKfO9.Wb5upEP+4TblJffb7CoNsq.PpA4C+NCB0MMBbiFH9DnTfOFyTW5TGoEupNkrPGO9GE=")
-#line.log("Auth Token : " + str(line.authToken))
 #line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 acorp = ["u81abc4643de94548bd22ba9338f3b3f3","uc01e543dea7fe2d04b8c5141edc3a749","u481a911a50dcd7c30fb3907c8fbe31ba"]
 lineMid = line.profile.mid
@@ -318,7 +315,7 @@ def about(to,text):
     ret_ += "\n╰───[ Finish ]"
     line.sendMentionV2(to, ret_, [lineMid, agler])
 def help(to,text):
-    a ="╔═════「Selfbot v6.9」═════\n║    | Command |  \n║ •  " \
+    a ="╔═════「Selfbot」═════\n║    | Command |  \n║ •  " \
     +" Debug\n║ •  " \
     +" Speed\n║ •  " \
     +" About\n║ •  " \
