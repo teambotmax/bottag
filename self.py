@@ -155,8 +155,8 @@ def SEND_MESSAGE(op):
                        pass
                     line.sendMessage(acorp, " 「 Lurk 」\nLurk point off♪")        
             if agtxt.lower().startswith('comment s'):
-                separate = kitxt.split("et ")
-                text = kitxt.replace(separate[0]+"et ","")
+                separate = agtxt.split("et ")
+                text = agtxt.replace(separate[0]+"et ","")
                 a = wait["comment"]
                 wait["comment"] = text
                 backupjson_1()
