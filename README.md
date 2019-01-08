@@ -1,5 +1,6 @@
 # Just Edit and Remake :3
 
+
 How to run ?
 ------
 - `git clone https://github.com/TeamNoobBot/Testing`
@@ -9,6 +10,6 @@ How to run ?
 Error? Pm Me
 ------
 https://line.me/ti/p/~agatis2
-https://line.me/ti/p/~aglergans
+
 
 # Forked Version
