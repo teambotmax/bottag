@@ -38,8 +38,8 @@ read = {
 }
 def autorestart():
     print("[ AUTO RESTARTED ]")
-	time.sleep(1500)
-	restart_program()
+    time.sleep(1500)
+    restart_program()
 
 thread1 = threading.Thread(target=autorestart)
 thread1.daemon = True
