@@ -176,7 +176,8 @@ oepoll.addOpInterruptWithDict({
     OpType.RECEIVE_MESSAGE: RECEIVE_MESSAGE
 })
 def speed(to,text):
-    start = time.time()              
+    start = time.time()    
+    line.sendMessage(to,"Waiting for a sec...")
     elapsed_time = time.time() - start
     took = time.time() - start
     line.sendMessage(to,"「 Speed 」\nType:\n - Took : %.3fms\n - Taken: %.10f" % (took,elapsed_time))
