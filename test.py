@@ -36,6 +36,15 @@ read = {
     "readMember": {},
     "readTime": {}
 }
+def autorestart():
+	   print("> [ Auto Restart Berjalan ] <")	   
+           time.sleep(1500)
+	   os.execl(sys.executable, sys.executable, *sys.argv)
+	
+thread1 = threading.Thread(target=autorestart)
+thread1.daemon = True
+thread1.start()
+
 def runtime(secs):
     mins, secs = divmod(secs,60)
     hours, mins = divmod(mins,60)
