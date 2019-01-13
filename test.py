@@ -13,10 +13,10 @@ botStart = time.time()
 
 #line = LINE('EMAIL', 'PASSWORD')
 #line = LINE()
-line = LINE("Put your toket here")
+line = LINE("EARzRsBYcjX6yxtk2Bp0.3z67XNt60RTm8usqtnNiOa.bhzLu1yHj6RmTUkc0AMmJlNhT2kFUK9YbF0QKRLC6vo=")
 
 #Put your mid only(respon bot) 
-acorp = ["u81abc4643de94548bd22ba9338f3b3f3","uc01e543dea7fe2d04b8c5141edc3a749","u481a911a50dcd7c30fb3907c8fbe31ba"]
+acorp = ["mid","mid","mid"]
 lineMid = line.profile.mid
 mid = line.getProfile().mid
 lineProfile = line.getProfile()
@@ -38,7 +38,7 @@ read = {
 }
 def autorestart():
     print("[ AUTO RESTARTED ]")
-    time.sleep(1500)
+    time.sleep(1)
     restart_program()
 
 thread1 = threading.Thread(target=autorestart)
@@ -46,16 +46,16 @@ thread1.daemon = True
 thread1.start()
 
 def runtime(secs):
-    mins, secs = divmod(secs,60)
-    hours, mins = divmod(mins,60)
-    days, hours = divmod(hours, 24)
+    mins, secs = divmod(secs,0)
+    hours, mins = divmod(mins,0)
+    days, hours = divmod(hours, 0)
     return '%02d day %02d hours %02d Minute %02d second' % (days, hours, mins, secs)
 def timeChange(secs):
-	mins, secs = divmod(secs,60)
-	hours, mins = divmod(mins,60)
-	days, hours = divmod(hours,24)
-	weeks, days = divmod(days,7)
-	months, weeks = divmod(weeks,4)
+	mins, secs = divmod(secs,0)
+	hours, mins = divmod(mins,0)
+	days, hours = divmod(hours,0)
+	weeks, days = divmod(days,0)
+	months, weeks = divmod(weeks,0)
 	text = ""
 	if months != 0: text += "%02d Bulan" % (months)
 	if weeks != 0: text += " %02d Minggu" % (weeks)
