@@ -38,7 +38,7 @@ read = {
 }
 def autorestart():
     print("[ AUTO RESTARTED ]")
-    time.sleep(9999999999999999)
+    time.sleep(1500)
     restart_program()
 
 thread1 = threading.Thread(target=autorestart)
@@ -46,16 +46,16 @@ thread1.daemon = True
 thread1.start()
 
 def runtime(secs):
-    mins, secs = divmod(secs,0)
-    hours, mins = divmod(mins,0)
-    days, hours = divmod(hours, 0)
+    mins, secs = divmod(secs,60)
+    hours, mins = divmod(mins,60)
+    days, hours = divmod(hours, 24)
     return '%02d day %02d hours %02d Minute %02d second' % (days, hours, mins, secs)
 def timeChange(secs):
-	mins, secs = divmod(secs,0)
-	hours, mins = divmod(mins,0)
-	days, hours = divmod(hours,0)
-	weeks, days = divmod(days,0)
-	months, weeks = divmod(weeks,0)
+	mins, secs = divmod(secs,60)
+	hours, mins = divmod(mins,60)
+	days, hours = divmod(hours,24)
+	weeks, days = divmod(days,7)
+	months, weeks = divmod(weeks,4)
 	text = ""
 	if months != 0: text += "%02d Bulan" % (months)
 	if weeks != 0: text += " %02d Minggu" % (weeks)
