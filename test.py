@@ -38,7 +38,7 @@ read = {
 }
 def autorestart():
     print("[ AUTO RESTARTED ]")
-    time.sleep(1)
+    time.sleep(9999999999999999)
     restart_program()
 
 thread1 = threading.Thread(target=autorestart)
