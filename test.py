@@ -13,7 +13,7 @@ botStart = time.time()
 
 #line = LINE('EMAIL', 'PASSWORD')
 #line = LINE()
-line = LINE("EARzRsBYcjX6yxtk2Bp0.3z67XNt60RTm8usqtnNiOa.bhzLu1yHj6RmTUkc0AMmJlNhT2kFUK9YbF0QKRLC6vo=")
+line = LINE("")
 
 #Put your mid only(respon bot) 
 acorp = ["mid","mid","mid"]
